@@ -1,16 +1,7 @@
 import pytest
-from selenium import webdriver
 from main_page import MainPage
 from search_page import SearchPage
 from my_office_page import MyOfficePage
-
-@pytest.fixture
-def browser():
-    print("\nstart browser for test..")
-    browser = webdriver.Chrome()
-    yield browser
-    print("\nquit browser..")
-    browser.quit()
 
 class TestMyOffice():
 
